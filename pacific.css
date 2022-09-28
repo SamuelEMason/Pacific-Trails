@@ -1,3 +1,14 @@
+/* 
+	Name: Samuel Mason
+    Date: 9/22/2022
+    Description: This is the homepage to a resort containing
+    a navigation bar, a picture of the area, and information such
+    as amenities and contact info. 
+
+	The actual assignment was to style the web page leaving the html
+	file untouched.
+*/
+
 header, hgroup, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
