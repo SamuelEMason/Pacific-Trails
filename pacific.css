@@ -1,0 +1,118 @@
+header, hgroup, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+	background-color: white;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('images/ptrbackground.jpg');
+}
+
+#wrapper {
+	width: 80%;
+	height: 80%;
+	margin: 20px auto 30px auto;
+	min-width: 600px;
+	max-width: 1200px;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-areas: 
+	'header header'
+	'nav content'
+	'nav footer';
+}
+
+header {
+	color: #fff;
+	background-image: url('images/sunset.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #000033;
+	grid-area: header;
+	padding: 10px 10px;
+	font-weight: bolder;
+}
+header > h1 {
+	margin: 0;
+}
+
+nav {
+	background-color: #8dc6e4;
+	list-style-type: none;
+	grid-area: nav;
+}
+
+nav ul {
+	font-size: 1.2em;
+	list-style: none;
+	padding-left: 0;
+	margin-left: 20px;
+}
+
+nav a {
+	color: #030038;
+	font-weight: 1000;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+
+#content {
+	padding: 0 30px;
+	grid-area: content;
+}
+
+#content > h2 {
+	color: #3399CC;
+}
+
+#content > img {
+	display: inline;
+	float: left;
+	margin-right: 20px;
+}
+
+#content > p {
+	display: inline;
+}
+
+#content > ul {
+	list-style-image: url('icons/marker.gif');
+	list-style-position: inside;
+}
+
+
+span.resort {
+	color: #6b7f96;
+	font-weight: bold;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#wrapper > #contact, footer {
+	grid-area: footer;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	padding: 20px;
+	font-size: 90%;
+	font-style: italic;
+
+}
+
